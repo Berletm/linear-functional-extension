@@ -60,14 +60,20 @@ $g \text{ - линейный функционал, } g \in Y^*: \forall y \in Y:
 
 \end{remark}
 
-\begin{theorem}{Теорема Рисса-Фреше}
+\begin{theorem}[Теорема Рисса-Фреше]
     \[
    \Let H - \text{Гильбертово пространство}, f \in H^* \Rightarrow \exists! \ y_0 \in H: f(x) = (x, y_0) \ \forall x \in H
     \]
 \end{theorem}
 
-\begin{theorem}{Теорема Хана-Банаха}
-            
+\begin{theorem}[Теорема Хана--Банаха]
+    Пусть $X$ --- линейное пространство над $\mathbb{R}$; $p \colon X \to \mathbb{R}$ --- функционал, удовлетворяющий следующим свойствам:
+    \begin{itemize}
+        \item $p(x + y) \le p(x) + p(y)$;
+        \item $\forall \alpha \ge 0 \quad p(\alpha x) = \alpha p(x)$.
+    \end{itemize} 
+
+Пусть $Y \subset X$ --- подпространство, $l \colon Y \to \mathbb{R}$ --- линейный функционал на $Y$, удовлетворяющий условию $\forall y \in Y \; l(y) \le p(y)$. Тогда существует линейный функционал $L$ на $X$, такой что $L|_{Y} = l$ и $L(x) \le p(x)$ для всех $x \in X$.
 \end{theorem}
 
 
